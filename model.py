@@ -71,3 +71,20 @@ class Client:
         result += f"Total: {total_amount}\n"
         result += f"Points: {frequent_renter_points}"
         return result
+    
+class Price:
+
+    def get_charge(self, days_rented: int) -> float:
+        pass
+
+    def get_frequent_render_points(self, days_rented: int) -> float:
+        pass
+
+class RegulaPrice(Price):
+    pass
+
+class NewReleasePrice(Price):
+    pass
+
+class ChildrenPrice(Price):
+    pass
